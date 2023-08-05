@@ -15,12 +15,6 @@
         margin: 0;
         padding: 0;
       }
-      @media (max-width: 768px) {
-      .firstsection {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
       body {
         background-color: rgb(2, 2, 58);
         color: white;
@@ -75,11 +69,6 @@
       .rightsection img {
         width: 80%;
       }
-      @media (min-width: 769px) and (max-width: 1024px) {
-      .firstsection {
-        flex-direction: row;
-      }
-    }
       .orange {
         color: rgb(170, 107, 228);
       }
@@ -181,6 +170,56 @@
       font-size: 15px;
       cursor: pointer;
     }
+      @media (max-width: 1024px) {
+        .firstsection {
+          flex-direction: column;
+        }
+        .firstsection > div {
+          width: 100%;
+          text-align: center;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        .firstsection {
+          margin: 60px 0;
+        }
+        .leftsection {
+          font-size: 2rem;
+        }
+        .leftsection .btn {
+          font-size: 14px;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+      }
+      @media (max-width: 480px) {
+        .firstsection {
+          margin: 40px 0;
+        }
+        .leftsection {
+          font-size: 1.8rem;
+        }
+        .leftsection .btn {
+          font-size: 13px;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer > div {
+          margin-bottom: 30px;
+        }
+        .footer ul hr {
+          display: none;
+        }
+      }
 
       /* ... (additional styles as needed) ... */
     </style>
