@@ -58,7 +58,7 @@
       .leftsection {
         font-size: 2.5rem;
       }
-      .leftsection .btn{
+      .leftsection .btn {
         background-color: #0e0e1a;
         color: white;
         padding: 10px;
@@ -125,30 +125,29 @@
         height: 450px;
         margin-top: 10px;
       }
-      footer{
+      footer {
         background-color: #0e0e1a;
-        height: 220px;
+        margin-top: 123px;
       }
-      .footer{
+      .footer {
         display: flex;
-        margin: 123px 50px;
+        margin: 0 50px;
         padding: 50px;
         justify-content: space-evenly;
       }
-      .footer ul{
+      .footer ul {
         list-style: none;
-
       }
-      .footer ul hr{
+      .footer ul hr {
         width: 60px;
       }
-      .footer ul h4{
+      .footer ul h4 {
         margin-bottom: 20px;
       }
-      .footer >div{
+      .footer > div {
         width: 223px;
       }
-      .footer .text-center{
+      .footer .text-center {
         text-align: center;
       }
       .copyright {
@@ -158,11 +157,127 @@
         padding: 10px 0;
         background-color: #0e0e1a;
       }
-      .second ul li a{
+      .second ul li a {
         text-decoration: none;
         color: white;
       }
-      
+      .btn {
+        background-color: #0e0e1a;
+        color: white;
+        padding: 10px;
+        border: solid white;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      @media (max-width: 1024px) {
+        .firstsection {
+          flex-direction: column;
+        }
+        .firstsection > div {
+          width: 100%;
+          text-align: center;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+
+        nav ul {
+          flex-direction: column;
+          margin: 20px 0;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
+
+        .left,
+        .right {
+          width: 100%;
+          text-align: center;
+        }
+
+        .right ul {
+          justify-content: center;
+        }
+        .firstsection {
+          margin: 60px 0;
+        }
+        .leftsection {
+          font-size: 2rem;
+        }
+        .leftsection .btn {
+          font-size: 14px;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer > div {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .footer ul {
+          margin: 10px 0;
+        }
+
+        .footer ul hr {
+          display: none;
+        }
+      }
+      @media (max-width: 480px) {
+        nav ul li a {
+          font-size: 14px;
+        }
+
+        .left,
+        .right {
+          font-size: 0.9rem;
+        }
+        .firstsection {
+          margin: 40px 0;
+        }
+        .leftsection {
+          font-size: 1.8rem;
+        }
+        .leftsection .btn {
+          font-size: 13px;
+        }
+        .rightsection img {
+          width: 100%;
+        }
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer > div {
+          margin-bottom: 30px;
+        }
+        .footer ul hr {
+          display: none;
+        }
+        .footer ul li a {
+          font-size: 14px;
+        }
+
+        .footer h4 {
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+      }
       /* ... (additional styles as needed) ... */
     </style>
   </head>
